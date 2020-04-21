@@ -20,10 +20,10 @@ func main() {
 
 	reLiteral := [7]string{
 		`(?m)time="(.*?)"\s+level=info\s+msg="(Creating\sinfrastructure\sresources...)"`,
-		`(?m)time="(.*?)"\s+level=info\s+msg="(Waiting\sup\sto\s30m0s\sfor\sthe\sKubernetes\sAPI\sat.*?)"`,
-		`(?m)time="(.*?)"\s+level=info\s+msg="(Waiting\sup\sto\s30m0s\sfor\sbootstrapping.*?)"`,
+		`(?m)time="(.*?)"\s+level=info\s+msg="(Waiting\sup\sto\s\d+m\d+s\sfor\sthe\sKubernetes\sAPI\sat.*?)"`,
+		`(?m)time="(.*?)"\s+level=info\s+msg="(Waiting\sup\sto\s\d+m\d+s\sfor\sbootstrapping.*?)"`,
 		`(?m)time="(.*?)"\s+level=info\s+msg="(Destroying\sthe\sbootstrap.*?)"`,
-		`(?m)time="(.*?)"\s+level=info\s+msg="(Waiting\sup\sto\s30m0s\sfor\sthe\scluster.*?initialize...)"`,
+		`(?m)time="(.*?)"\s+level=info\s+msg="(Waiting\sup\sto\s\d+m\d+s\sfor\sthe\scluster.*?initialize...)"`,
 		`(?m)time="(.*?)"\s+level=info\s+msg="(Waiting\sup\sto\s\d+m\d+s\sfor\sthe\sopenshift-console.*?created...)"`,
 		`(?m)time="(.*?)"\s+level=info\s+msg="(Install\scomplete!)"`,
 	}
