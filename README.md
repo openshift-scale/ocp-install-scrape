@@ -4,15 +4,15 @@ Simple OpenShift log file scraper to measure the duration of the installation st
 
 ## Usage
 ```
-[user@host ocp-install-scrape]$ ./ocp-install-scrape -h
-Usage of ./ocp-install-scrape:
+[user@host ocp-install-scrape]$ go run main.go -h
+Usage of /tmp/go-build829195785/b001/exe/main:
   -log string
-       openshift_install.log file location (default "openshift_install.log")
+    	openshift_install.log file location (default "openshift_install.log")
 ```
 
 ## Output
 ```
-[user@host ocp-install-scrape]$ ./ocp-install-scrape -log openshift_install-new.log
+[user@host ocp-install-scrape]$ go run main.go -log openshift_install-new.log
 Step, Time (s)
 Infrastructure created, 409
 API server available, 435
